@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Learning Platform Dashboard</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <style>
-        .aside{
+        .aside {
             width: 250px;
         }
-        #asideCardContainer{
-            display:flex;
+
+        #asideCardContainer {
+            display: flex;
             flex-direction: column;
             margin-top: 35px;
-            gap:10px;
-        }
-        #asideCardContainer>*{
-            width: 200px;
+            gap: 10px;
         }
 
+        #asideCardContainer>* {
+            width: 200px;
+        }
     </style>
 </head>
 
@@ -30,30 +32,30 @@
                 <header class="navbar">
                     <h1>Online Learning Platform</h1>
                     <div>
-                       
-                        <img src="./images/notificationIcon.jpg" alt="notification">
+                       <img src="./images/notificationIcon.jpg" alt="notification">
                         <img src="./images/profileImg.jpg" alt="profile image">
                     </div>
-                   
-                    
+
+
                 </header>
                 <div class="content">
                     <div id="cardContainer" class="cards"></div>
                     <div class="tableContainer"></div>
-                   
-               
+
+
+                </div>
+
             </div>
-           
+            <div class="aside">
+                <div id="asideCardContainer" class="cards"></div>
+            </div>
         </div>
-        <div class="aside">
-            <div id="asideCardContainer" class="cards"></div>
-        </div>
-    </div>
-  
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./JS/Nav.js"> </script>
-    <script src="Jquery/Cards.js"></script>
-    <!-- <script src="Jquery/RecentOrders.js"></script> -->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./JS/Nav.js"> </script>
+        <script src="Jquery/Cards.js"></script>
+        <!-- <script src="Jquery/RecentOrders.js"></script> -->
 </body>
+
 </html>
