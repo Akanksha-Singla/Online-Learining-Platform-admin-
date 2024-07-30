@@ -25,9 +25,9 @@ $(document).ready(function() {
   const $nav = $("<nav>").addClass("sidebar");
 
   const $navElements = navElementItems.map(function(element) {
-      const $a = $("<a>").attr("href", `./${element}.html`).text(element);
-      console.log($a);
-      return $a;
+      const a = $("<a>").attr("href", `./${element}.html`).text(element);
+      console.log(a);
+      return a;
   });
 
   $("#navContainer").append($nav.append($navElements));

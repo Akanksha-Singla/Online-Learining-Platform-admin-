@@ -5,70 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Learning Platform Dashboard</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+        .aside{
+            width: 250px;
+        }
+        #asideCardContainer{
+            display:flex;
+            flex-direction: column;
+            margin-top: 35px;
+            gap:10px;
+        }
+        #asideCardContainer>*{
+            width: 200px;
+        }
+
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <div id="navContainer"></div>
-        <div class="main-content">
-            <header class="navbar">
-                <h1>Online Learning Platform</h1>
-            </header>
-            <div class="content">
-                <div class="cards">
-                    <div class="card">
-                        <h2>Courses</h2>
-                        <p>Manage all courses</p>
-                    </div>
-                    <div class="card">
-                        <h2>Instructors</h2>
-                        <p>Manage instructors</p>
-                    </div>
-                    <div class="card">
-                        <h2>Students</h2>
-                        <p>Manage students</p>
-                    </div>
-                    <div class="card">
-                        <h2>Reports</h2>
-                        <p>View reports</p>
-                    </div>
-                </div>
-                <div class="table-container">
-                    <h2>Course List</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Course Name</th>
-                                <th>Instructor</th>
-                                <th>Enrolled Students</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Introduction to Python</td>
-                                <td>John Doe</td>
-                                <td>120</td>
-                                <td>Active</td>
-                            </tr>
-                            <tr>
-                                <td>Web Development</td>
-                                <td>Jane Smith</td>
-                                <td>90</td>
-                                <td>Active</td>
-                            </tr>
-                            <tr>
-                                <td>Data Science</td>
-                                <td>Mike Johnson</td>
-                                <td>150</td>
-                                <td>Inactive</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+    <div class="flex">
+        <div class="container">
+            <div id="navContainer"></div>
+            <div class="main-content">
+                <header class="navbar">
+                    <h1>Online Learning Platform</h1>
+                </header>
+                <div class="content">
+                    <div id="cardContainer" class="cards"></div>
+                    <div class="tableContainer"></div>
+                   
+               
             </div>
+           
+        </div>
+        <div class="aside">
+            <div id="asideCardContainer" class="cards"></div>
         </div>
     </div>
+  
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./JS/Nav.js"> </script>
+    <script src="Jquery/Cards.js"></script>
+    <!-- <script src="Jquery/RecentOrders.js"></script> -->
 </body>
 </html>
